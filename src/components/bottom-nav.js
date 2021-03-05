@@ -1,11 +1,14 @@
-import React, { component } from 'react';
+import React from 'react';
+import './css/bottom-nav.css';
 
 export default class BottomNav extends React.Component {
     render() {
-        <ul>
-            <li>Timer</li>
-            <li>Log</li>
-            <li>Calender</li>
-        </ul>
+        return (
+            <div className="navbar">
+                <a href="#timer">Timer</a>
+                <a href="#log">Log</a>
+                <a href="#calendar">Calendar</a>
+            </div>
+        );
     }
 }
